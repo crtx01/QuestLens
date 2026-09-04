@@ -7,7 +7,7 @@ replies on 4 September 2026. Public identity: c0rtex; GitHub: `crtx01`; Reddit:
 ## GitHub
 
 - Repository created: https://github.com/crtx01/QuestLens
-- Source push / APK release: pending local CLI authorization and upload.
+- Source published on `main`; APK release upload is in progress.
 
 ## Reddit candidates
 

@@ -26,8 +26,8 @@ setup is required. It replaces the passthrough shortcut and also affects the
 physical action button on the tested Quest 3S. Images remain in headset memory.
 
 This APK is a debug preview for sideload testing. It is not a store production
-build. Keep a stable private signing key for subsequent releases; changing keys
-requires uninstalling the old app and setting it up again.
+build. A future build signed with a different key will require uninstalling the
+old app and setting it up again.
 
-Attach the APK, SHA256SUMS.txt, Windows installer, QuestLens source archive, and
-SPAKE2 dependency source archive from the publication bundle. Include all notices.
+Assets include the APK, SHA256SUMS.txt, Windows installer, installation guide,
+QuestLens source archive, and SPAKE2 dependency source archive with its notices.
