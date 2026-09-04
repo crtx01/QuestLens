@@ -1,40 +1,71 @@
-# Draft Reddit post
+# Published Reddit post
 
 Title: We developed QuestLens: a free magnifier for low-vision Quest users
 
-I'm c0rtex, and I'm involved in developing QuestLens. We developed this small
-Android app to make VR more accessible for people with low vision, starting with
-the difficulty of reading small text in games.
+I'm c0rtex, and I'm involved in developing QuestLens. We built it to make VR more
+accessible for people with low vision, starting with one basic problem: text, HUD
+elements and physical details can be too small to read, while Quest does not provide
+a system-wide magnifier that solved this workflow for us.
 
-Quest has accessibility settings, but we could not find a built-in magnifier that
-solved this reading workflow on our Quest 3S. We'd like to see stronger official
-accessibility support; QuestLens is a practical step we can share now.
+## What QuestLens does
 
-It freezes the game image and opens a 2D magnifier. You can zoom up to 8×, pan around,
-close the window and return to the game. On my Quest 3S, a double-tap on the side of
-the headset already opens the lens without going through the system menu.
+QuestLens freezes the current headset view and opens that image in a large 2D panel.
+It works with rendered game content and can also be opened from passthrough to inspect
+the physical world. You can zoom up to 8x, pan around the image, close the panel and
+immediately return to the game or passthrough.
 
-The app also supports double-tap to close, right-trigger click to zoom in,
-left-trigger click to zoom out, a simpler English interface and hover help.
-These interactions have been tested on my Quest 3S. The new preview includes an
-English first-run guide explaining setup and permissions.
+It is a frozen-image magnifier, not live zoom. For a game, that means pausing visually
+to read a menu, subtitle, map, inventory item or HUD element. In passthrough, it can
+be used to inspect a label, object or other static detail. You then close it and
+continue normally.
 
-This is an experimental accessibility project, not a live in-game zoom overlay.
-Images stay in headset memory: no cloud, OCR or account. The optional headset gesture
-needs an initial developer/ADB setup and replaces the passthrough shortcut; on my
-Quest 3S it also affects the physical action button. The app can restore that setting.
+## How the flow works
 
-Local preparation already runs inside the app without repeating the initial
-authorization. I still need to verify the complete flow after a headset restart
-before promising that part.
+1. Install the APK and open QuestLens from Unknown Sources.
+2. Select **Start Capture** and accept the Quest screen-capture permission.
+3. Select **Close Panel and Play**, then open your game or passthrough.
+4. With the optional shortcut configured, double-tap the side of the headset whenever
+   you need the magnifier.
+5. Use the right controller trigger to zoom in and the left trigger to zoom out. Hold
+   and drag to pan. Large on-screen + and - controls are also available, with hover
+   help.
+6. Double-tap again or select **Return to Game** to close the lens and continue where
+   you stopped.
 
-I’d appreciate feedback from people with low vision: readability, trigger controls,
-window size and game compatibility would be especially useful.
+After the one-time shortcut setup, the normal magnifier workflow runs on the headset
+without a PC. The preview includes an English first-run guide explaining each
+permission and setup step.
 
-Download and installation: https://github.com/crtx01/QuestLens
+## Current status
 
-If you'd like to support this work, optional contributions help us maintain
-updates, improve compatibility, and develop new accessibility tools for people
-with low vision. The repository has the support link. All app features are free.
+We tested opening and closing the lens, trigger zoom, dragging and the complete
+reading flow on Quest 3S. Images remain in headset memory: there is no cloud upload,
+OCR, telemetry or QuestLens account.
 
-Posting record is maintained separately in `OUTREACH.md`.
+The preview is experimental. It requires sideloading, and the optional one-handed
+headset gesture requires initial developer/ADB configuration. That gesture replaces
+the native passthrough double-tap shortcut and affected the physical action button on
+our Quest 3S; the original behavior can be restored from Settings. Recovery after a
+complete headset restart and compatibility with Quest 2, Quest 3 and Quest Pro still
+need broader testing.
+
+## What we want to build next
+
+We want to explore live magnification, a supported one-handed system shortcut, better
+contrast and reading controls, and more tools requested by people with low vision.
+Community reports about specific games, menus, passthrough tasks and different Quest
+models will guide that work.
+
+## Download, source and setup
+
+https://github.com/crtx01/QuestLens
+
+QuestLens is free and open source. If you'd like to support continued updates and new
+low-vision accessibility tools, the repository includes an optional support link.
+Every current app feature is available without paying.
+
+Feedback is especially useful if you include your Quest model, the game or passthrough
+task, what you were trying to read, and whether the shortcut and controls worked for
+you. QuestLens is independent and is not affiliated with Meta.
+
+The publication and replies are recorded separately in `OUTREACH.md`.
