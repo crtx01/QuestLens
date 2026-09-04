@@ -24,7 +24,7 @@ replies on 4 September 2026. Public identity: c0rtex; GitHub: `crtx01`; Reddit:
 
 | Discussion | Relevance | Status |
 | --- | --- | --- |
-| [Vision accessibility](https://www.reddit.com/r/OculusQuest/comments/1ehlje8/) | Explicit request for magnification to read fixed-distance game text. | Not contacted: community limits self-promotion to 10% of activity; this profile has no prior participation. |
+| [Vision accessibility](https://www.reddit.com/r/OculusQuest/comments/1ehlje8/) | Explicit request for magnification to read fixed-distance game text. | [Reply posted](https://www.reddit.com/r/OculusQuest/comments/1ehlje8/comment/p7tq6dg/), with developer disclosure, setup requirements and the frozen-image limitation. |
 | [Accessibility features for visually impaired users](https://www.reddit.com/r/OculusQuest/comments/1phz34l/dear_meta_developers_as_a_legally_blind_user_i/) | Discussion includes requests for a working magnifying tool. | Not contacted under the same community rule. |
 | [Low vision users, is it worth?](https://www.reddit.com/r/MetaQuestVR/comments/1sups3h/low_vision_users_is_it_worth/) | Recent purchase/compatibility question. | [Reply posted](https://www.reddit.com/r/MetaQuestVR/comments/1sups3h/comment/p7tpaap/), specifically for readers who already have headset access and need game-text magnification. Explicitly does not recommend buying a headset based on this prototype. |
 
