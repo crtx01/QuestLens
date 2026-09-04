@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:installLocation="auto">
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <!-- Optional double-tap shortcut: user-approved background Activity launch; no overlay is drawn. -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Optional, authenticated ADB client connects only to this headset (loopback). -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Development permission explicitly granted once with pm grant, not silently obtained.
+         Checked at runtime; optional gesture setup fails closed without it. -->
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <application android:label="QuestLens" android:icon="@drawable/ic_questlens"
+        android:theme="@style/AppTheme" android:allowBackup="false" android:supportsRtl="true">
+        <meta-data android:name="com.oculus.supportedDevices" android:value="quest2|questpro|quest3|quest3s" />
+        <activity android:name=".MainActivity" android:exported="true"
+            android:resizeableActivity="true" android:launchMode="singleTask">
+            <layout android:defaultWidth="1024dp" android:defaultHeight="640dp"
+                android:minWidth="360dp" android:minHeight="360dp" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".CaptureService" android:exported="false"
+            android:foregroundServiceType="mediaProjection" android:stopWithTask="false" />
+        <activity android:name=".LaunchPanelActivity" android:exported="true"
+            android:label="QuestLens — open window" android:theme="@android:style/Theme.NoDisplay"
+            android:excludeFromRecents="true" android:noHistory="true" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.ACCESSIBILITY_SHORTCUT_TARGET" />
+            </intent-filter>
+            <meta-data android:name="android.accessibilityshortcut.target" android:resource="@xml/panel_shortcut" />
+        </activity>
+    </application>
+</manifest>

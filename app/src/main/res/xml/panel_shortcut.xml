@@ -1,0 +1,3 @@
+<accessibility-shortcut-target xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/panel_shortcut_description"
+    android:summary="@string/panel_shortcut_summary" />

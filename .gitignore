@@ -1,0 +1,18 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+.idea/
+*.iml
+*.hprof
+artifacts/
+# Local investigation notes contain headset/network-specific diagnostics.
+BUILD_REPORT.md
+TEST_PLAN.md
+*.jks
+*.keystore
+*.p12
+*.key
+keystore.properties
+.env
+.DS_Store

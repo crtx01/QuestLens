@@ -1,0 +1,4 @@
+<resources>
+    <string name="panel_shortcut_description">Open the QuestLens window with the latest captured image. Start and allow capture in QuestLens first. This shortcut does not use an accessibility service or filter controller input.</string>
+    <string name="panel_shortcut_summary">Open magnifier window</string>
+</resources>
