@@ -2,6 +2,8 @@
 
 Bug reports, code improvements and feedback from low-vision users are welcome.
 Use plain language and describe the reading task you were trying to complete.
+Questions and accessibility suggestions can also be sent to
+[davidperetta12@gmail.com](mailto:davidperetta12@gmail.com).
 
 For a bug report, include the Quest model, Horizon version, QuestLens version,
 steps to reproduce, expected result and actual result. Note whether the volume

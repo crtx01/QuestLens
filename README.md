@@ -13,11 +13,15 @@ not a live OpenXR zoom overlay.**
 
 **By c0rtex.** Experimental Android app, currently tested on Quest 3S. Double-tap
 opening/closing, trigger zoom, dragging and hover help were confirmed in 0.4.1-dev.
-Version 0.4.2-preview adds a first-run setup guide and optional support links.
+Version 0.4.3-preview adds a direct contact option alongside the first-run setup
+guide and optional support links.
 Full restart recovery is not yet verified.
 
-**[Download the 0.4.2 preview APK and installer](https://github.com/crtx01/QuestLens/releases/tag/v0.4.2-preview)**
+**[Download the 0.4.3 preview APK and installer](https://github.com/crtx01/QuestLens/releases/tag/v0.4.3-preview)**
  · **[Setup instructions](docs/INSTALL.md)** · **[Report an issue](https://github.com/crtx01/QuestLens/issues)**
+
+**Contact us:** [davidperetta12@gmail.com](mailto:davidperetta12@gmail.com) for
+questions, accessibility suggestions and feedback.
 
 ## Support accessibility development
 
@@ -82,6 +86,7 @@ Current automated checks: **15 tests passed, zero lint errors**. See the
 
 Contributions and low-vision usability feedback are welcome. Read the
 [architecture notes](docs/ARCHITECTURE.md) and [contribution guide](CONTRIBUTING.md).
+You can also email [davidperetta12@gmail.com](mailto:davidperetta12@gmail.com).
 
 ## License
 

@@ -6,6 +6,8 @@ Display name: **c0rtex**
 
 Tagline: **Accessible VR tools, starting with QuestLens**
 
+Public contact: **davidperetta12@gmail.com**
+
 Patreon page address reserved in the creator account:
 `https://www.patreon.com/c/c0rtexQuestLens`
 
@@ -38,6 +40,7 @@ Support does not buy exclusive app features or guarantee a release schedule.
 
 Feedback on readability and usability is welcome, whether or not you contribute.
 QuestLens is an independent project and is not affiliated with Meta.
+Contact us at davidperetta12@gmail.com.
 
 ## Monthly support draft
 
@@ -47,10 +50,11 @@ promised release schedule.
 
 ## App integration
 
-`app/src/main/res/values/support.xml` holds verified public URLs. An empty URL
-hides that provider. The home screen displays **SUPPORT US** only when at least
-one URL is configured. Links open in an external browser; capture has no support
-buttons and no app feature checks payment status.
+`app/src/main/res/values/support.xml` holds the public contact email and verified
+support URLs. An empty support URL hides that provider. The home screen always
+displays **CONTACT US** and displays **SUPPORT US** when at least one provider is
+configured. Links open in an external app; capture has no support buttons and no
+app feature checks payment status.
 
 PayPal's link builder currently requires a business account for the signed-in
 personal account. No PayPal support URL has been created or guessed. Resolve this

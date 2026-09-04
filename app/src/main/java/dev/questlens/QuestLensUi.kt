@@ -21,7 +21,7 @@ import java.util.Locale
 @Composable
 internal fun QuestLensScreen(state: AppState, tapRequested: Boolean, tap: TapSetupState,
                             start: () -> Unit, stop: () -> Unit, close: () -> Unit, settings: () -> Unit,
-                            supportAvailable: Boolean, support: () -> Unit) {
+                            contact: () -> Unit, supportAvailable: Boolean, support: () -> Unit) {
     var zoom by remember(state.frame) { mutableFloatStateOf(1f) }
     var resetKey by remember(state.frame) { mutableIntStateOf(0) }
     Surface(Modifier.fillMaxSize()) {
@@ -54,6 +54,7 @@ internal fun QuestLensScreen(state: AppState, tapRequested: Boolean, tap: TapSet
                         Phase.IDLE -> {
                             HelpButton("START CAPTURE", "Allow capture for this session, then return to your game. Images stay on your headset.", start)
                             HelpButton("SETTINGS", "Set up or restore the headset shortcut. You only need to configure it once.", settings, secondary = true)
+                            HelpButton("CONTACT US", "Email questions, feedback or accessibility suggestions to the QuestLens team.", contact, secondary = true)
                             if (supportAvailable) HelpButton("SUPPORT US", "Optional support for c0rtex and QuestLens development.", support, secondary = true)
                         }
                         Phase.CAPTURE_ACTIVE -> {

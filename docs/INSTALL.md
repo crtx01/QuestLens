@@ -10,7 +10,7 @@ you are testing. With Android platform-tools available:
 
 ```sh
 adb devices
-adb install -r QuestLens-0.4.2-preview.apk
+adb install -r QuestLens-0.4.3-preview.apk
 ```
 
 If more than one device is connected, add `-s DEVICE_SERIAL` after `adb` in each
@@ -89,3 +89,6 @@ include or need one.
   necessary. This prototype's reconnect path does not yet include a key-reset wizard.
 - **Trigger zoom unavailable:** use the on-screen − / + controls. Controller IDs were
   observed on a Quest 3S; another Horizon version may deliver different input.
+
+For setup help, questions or accessibility suggestions, contact
+[davidperetta12@gmail.com](mailto:davidperetta12@gmail.com).

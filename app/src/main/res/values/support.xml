@@ -1,5 +1,6 @@
 <resources>
     <!-- Fill only with the creator's verified public pages; never use login or recovery URLs. -->
+    <string name="contact_email" translatable="false">davidperetta12@gmail.com</string>
     <string name="support_patreon_url" translatable="false">https://www.patreon.com/c/c0rtexQuestLens</string>
     <string name="support_paypal_url" translatable="false"></string>
 </resources>

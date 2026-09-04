@@ -15,7 +15,8 @@ import androidx.compose.ui.unit.sp
 internal data class SupportPage(val name: String, val url: String, val help: String)
 
 @Composable
-internal fun SupportDialog(pages: List<SupportPage>, open: (String) -> Unit, dismiss: () -> Unit) {
+internal fun SupportDialog(pages: List<SupportPage>, contactEmail: String, contact: () -> Unit,
+                           open: (String) -> Unit, dismiss: () -> Unit) {
     AlertDialog(onDismissRequest = dismiss,
         title = { Text("SUPPORT US", fontSize = 28.sp) },
         text = {
@@ -24,6 +25,8 @@ internal fun SupportDialog(pages: List<SupportPage>, open: (String) -> Unit, dis
                 Text("Support c0rtex and the development of QuestLens.", fontSize = 24.sp)
                 Text("Help us maintain updates and create new accessibility tools for people with low vision.", fontSize = 22.sp)
                 Text("Support is optional. Every app feature is available without donating.", fontSize = 22.sp)
+                HelpButton("CONTACT US", "Email questions, feedback or accessibility suggestions.", contact, secondary = true)
+                Text(contactEmail, fontSize = 20.sp)
                 pages.forEach { page -> HelpButton(page.name, page.help, { open(page.url) }) }
                 Text("Opens the provider's website in your browser. QuestLens does not collect payment details.", fontSize = 20.sp)
             }

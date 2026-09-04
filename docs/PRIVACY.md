@@ -3,6 +3,9 @@
 QuestLens processes captured images on the headset. It has no analytics, advertising,
 cloud account, OCR service, audio recording or image-upload feature.
 
+Privacy and accessibility questions can be sent to
+[davidperetta12@gmail.com](mailto:davidperetta12@gmail.com).
+
 The optional **SUPPORT US** buttons open the creator's verified support pages in an
 external browser. Those providers handle their own accounts, cookies and payments;
 QuestLens does not receive payment credentials or track whether you contributed.

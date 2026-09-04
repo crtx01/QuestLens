@@ -60,6 +60,8 @@ models will guide that work.
 
 https://github.com/crtx01/QuestLens
 
+Contact us: davidperetta12@gmail.com
+
 QuestLens is free and open source. If you'd like to support continued updates and new
 low-vision accessibility tools, the repository includes an optional support link.
 Every current app feature is available without paying.

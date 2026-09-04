@@ -15,8 +15,8 @@ else {
 }
 if (-not $Apk) {
     $candidates = @(
-        (Join-Path $PSScriptRoot 'QuestLens-0.4.2-preview.apk'),
-        (Join-Path $PSScriptRoot '../QuestLens-0.4.2-preview.apk'),
+        (Join-Path $PSScriptRoot 'QuestLens-0.4.3-preview.apk'),
+        (Join-Path $PSScriptRoot '../QuestLens-0.4.3-preview.apk'),
         (Join-Path $PSScriptRoot '../app/build/outputs/apk/debug/app-debug.apk')
     )
     $Apk = $candidates | Where-Object { Test-Path -LiteralPath $_ } | Select-Object -First 1

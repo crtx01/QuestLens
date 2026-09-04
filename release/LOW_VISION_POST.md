@@ -23,6 +23,8 @@ in Settings. Other headsets and recovery after a full restart still need testing
 
 Download, source and written setup information: https://github.com/crtx01/QuestLens
 
+Questions and accessibility feedback: davidperetta12@gmail.com
+
 If you use a Quest and visual magnification helps you, I'd welcome feedback on
 readability and controls. Please don't feel you need to test it to join the discussion.
 

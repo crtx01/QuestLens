@@ -8,7 +8,7 @@ replies on 4 September 2026. Public identity: c0rtex; GitHub: `crtx01`; Reddit:
 
 - Repository created: https://github.com/crtx01/QuestLens
 - Source published on `main`.
-- [Preview release](https://github.com/crtx01/QuestLens/releases/tag/v0.4.2-preview)
+- [Preview release](https://github.com/crtx01/QuestLens/releases/tag/v0.4.3-preview)
   published with six verified uploaded assets: APK, source, dependency source,
   installer, installation guide and SHA256 sums.
 - The same APK was installed on the test headset over Wi-Fi ADB.

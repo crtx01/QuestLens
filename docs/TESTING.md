@@ -23,6 +23,7 @@ and zoom boundaries.
 | Separate right/left controller events | Observed on Quest 3S: virtual device IDs `0x100002` / `0x100001`. |
 | Double-tap closes the lens, trigger zoom and hover help in 0.4.1-dev | Confirmed by the tester on Quest 3S. |
 | First-run guide and support dialog in 0.4.2-preview | Installed through Wi-Fi ADB; all four guide pages and the support dialog were opened and inspected through device UI automation. New-user enrollment and external payment completion have not been retested. |
+| Contact option in 0.4.3-preview | Debug build, unit tests and Android lint passed. Opening the headset email client remains a physical test item. |
 | Autonomous preparation after a full headset restart | Pending. |
 | Other headsets, Horizon versions and long sessions | Pending. |
 

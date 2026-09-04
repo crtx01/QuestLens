@@ -10,8 +10,8 @@ android {
         applicationId = "dev.questlens"
         minSdk = 29
         targetSdk = 34
-        versionCode = 9
-        versionName = "0.4.2-preview"
+        versionCode = 10
+        versionName = "0.4.3-preview"
     }
     buildFeatures { compose = true; buildConfig = true }
     compileOptions {

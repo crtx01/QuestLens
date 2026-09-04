@@ -1,4 +1,4 @@
-# QuestLens 0.4.2-preview — experimental preview
+# QuestLens 0.4.3-preview — experimental preview
 
 By c0rtex. A local 2D magnifier for small text in Quest games, tested on Quest 3S.
 
@@ -15,6 +15,7 @@ improve compatibility, and develop new accessibility tools. All app features are
 - First-run guide explains the permissions, native confirmations and capture flow.
 - Windows installation helper handles the initial ADB setup commands.
 - Optional support page on the home screen; all app features remain free.
+- Direct **CONTACT US** button for questions, feedback and accessibility suggestions.
 
 The opening/closing gesture, trigger zoom, panning and hover help were confirmed
 by the tester on Quest 3S in 0.4.1-dev. Full headset restart recovery, other models
@@ -31,3 +32,5 @@ old app and setting it up again.
 
 Assets include the APK, SHA256SUMS.txt, Windows installer, installation guide,
 QuestLens source archive, and SPAKE2 dependency source archive with its notices.
+
+Contact: [davidperetta12@gmail.com](mailto:davidperetta12@gmail.com)

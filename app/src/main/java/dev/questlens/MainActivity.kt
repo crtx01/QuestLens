@@ -65,8 +65,10 @@ class MainActivity : ComponentActivity() {
                 }
                 QuestLensScreen(state, tapEnabled, tapState, ::startConsent,
                     { startService(Intent(this, CaptureService::class.java).setAction(CaptureService.STOP)) },
-                    ::closePanel, { tapSetupVisible = true }, supportPages.isNotEmpty(), { supportVisible = true })
-                if (supportVisible) SupportDialog(supportPages, ::openSupportPage, { supportVisible = false })
+                    ::closePanel, { tapSetupVisible = true }, ::openContact,
+                    supportPages.isNotEmpty(), { supportVisible = true })
+                if (supportVisible) SupportDialog(supportPages, getString(R.string.contact_email),
+                    ::openContact, ::openSupportPage, { supportVisible = false })
                 if (tapSetupVisible) ShortcutSettings(tapAvailable, tapEnabled, tapPermission, tapState,
                     { tapSetupVisible = false }, ::openBackgroundLaunchSettings, ::openPanelShortcutSettings,
                     { tapSetupVisible = false; setupGuideVisible = true }) { enabled ->
@@ -93,6 +95,24 @@ class MainActivity : ComponentActivity() {
             Toast.makeText(this, "Could not open the support page. Please try again later.", Toast.LENGTH_LONG).show()
             Log.w(FrameRepository.TAG, "QUESTLENS_SUPPORT_BROWSER_UNAVAILABLE")
         }
+    }
+
+    private fun openContact() {
+        val email = getString(R.string.contact_email)
+        val subject = "QuestLens feedback"
+        val destinations = listOf(
+            Uri.parse("mailto:$email?subject=${Uri.encode(subject)}"),
+            Uri.parse("https://mail.google.com/mail/?view=cm&fs=1&to=${Uri.encode(email)}&su=${Uri.encode(subject)}")
+        )
+        for (destination in destinations) {
+            try {
+                startActivity(Intent(Intent.ACTION_VIEW, destination))
+                return
+            } catch (_: Exception) {
+                // Try the browser fallback when the headset has no email client.
+            }
+        }
+        Toast.makeText(this, "Email us at $email", Toast.LENGTH_LONG).show()
     }
 
     private fun closePanel() {

@@ -1,6 +1,6 @@
 # Third-party notices
 
-QuestLens 0.4.2-preview by c0rtex uses the following libraries. Project code is MIT;
+QuestLens 0.4.3-preview by c0rtex uses the following libraries. Project code is MIT;
 each dependency retains its own copyright and license. Full notices are in
 `docs/licenses/` and the corresponding upstream sources.
 

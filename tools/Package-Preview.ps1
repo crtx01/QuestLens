@@ -1,4 +1,4 @@
-param([string]$Version = '0.4.2-preview')
+param([string]$Version = '0.4.3-preview')
 $ErrorActionPreference = 'Stop'
 $questRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $questOutput = Join-Path $questRoot "artifacts/publication/$Version"
