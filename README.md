@@ -19,7 +19,7 @@ Recent development also includes:
 The latest downloadable GitHub preview is still **0.4.3-preview**. Newer development work is being documented here before the next packaged public release.
 
 **[Download the 0.4.3 preview APK and installer](https://github.com/crtx01/QuestLens/releases/tag/v0.4.3-preview)**
- · **[Setup instructions](docs/INSTALL.md)** · **[Report an issue](https://github.com/crtx01/QuestLens/issues)**
+ · **[Latest project update](docs/PROJECT_UPDATE_2026-09-28.md)** · **[Setup instructions](docs/INSTALL.md)** · **[Report an issue](https://github.com/crtx01/QuestLens/issues)**
 
 **Contact:** [davidperetta12@gmail.com](mailto:davidperetta12@gmail.com)
 
