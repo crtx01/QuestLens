@@ -1,34 +1,20 @@
 # QuestLens project update — September 28, 2026
 
-QuestLens is still actively being developed as an open-source accessibility tool for people with low vision using Meta Quest.
+QuestLens is a free, open-source accessibility app for people with low vision using Meta Quest. I have low vision myself and built it to make small text and visual details easier to read.
 
-## What changed since the 0.4.3 preview
+## 0.5.5-preview
 
-The public 0.4.3 preview remains the latest packaged GitHub download. Since then, development has continued in a few areas:
+The latest downloadable preview is [0.5.5-preview](https://github.com/crtx01/QuestLens/releases/tag/v0.5.5-preview). It is one APK with frozen-image magnification in a 2D window and live magnification for real-world passthrough. This update also refreshes the interface, simplifies setup, and adds English, Portuguese, Spanish, French and German language options. Some text may still appear in English.
 
-- **Live passthrough magnification** for enlarging real-world content without first freezing a frame.
-- **A newer 2D version** of QuestLens, focused on keeping the controls simple and readable.
-- **Broader headset support work** across Quest 2, Quest 3 and Quest 3S.
-- Continued accessibility testing around readability, comfort and interaction.
-
-QuestLens originally focused on freezing the current view and enlarging it in a 2D window. That workflow is still useful and remains the basis of the currently downloadable 0.4.3 preview.
+The preview targets Quest 2, Quest 3 and Quest 3S. It is a sideloaded debug build, not a Meta Store release. Capture features require Quest system permission, and protected content may be unavailable to capture. Zoom controls within QuestLens UI are still in development.
 
 ## Meta Horizon Start
 
-QuestLens has also been accepted into the Meta Horizon Start developer program. I plan to use that access to continue discussing low-vision accessibility, testing needs and future hardware support with the Meta developer community.
-
-## What is not being announced
-
-Some internal accessibility experiments are not ready for public release or documentation yet. They are intentionally not part of this update.
+QuestLens is a member of Meta Horizon Start. I am exploring how to test low-vision accessibility on future Meta VR Glasses hardware.
 
 ## Feedback
 
-If you have low vision and use Quest 2, Quest 3 or Quest 3S, feedback is especially useful:
-
-- What text or UI is hardest to read?
-- Is frozen-image zoom useful for your workflow?
-- Where would live passthrough magnification help most?
-- Which controls are easiest to use without needing to read small labels?
+Feedback from people with low vision is especially useful. Tell me which headset you use and what you are trying to read.
 
 Project: https://github.com/crtx01/QuestLens
 
